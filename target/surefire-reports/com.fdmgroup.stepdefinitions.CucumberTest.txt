@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.fdmgroup.stepdefinitions.CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 135.9 s <<< FAILURE! -- in com.fdmgroup.stepdefinitions.CucumberTest
+As a user I want to verify that the RBC Home Value Estimator handles valid and invalid address inputs correctly.User enters an invalid home address #1 -- Time elapsed: 22.47 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (af6046dd396ebaa423c6da089fea9045)] -> xpath: //*[@id='address']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/pp/xd6nhfmx531...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60209}, goog:processID: 32934, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60209/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af6046dd396ebaa423c6da089fea9045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fdmgroup.pages.HomeValueEstimatorPage.enterAddress(HomeValueEstimatorPage.java:46)
+	at com.fdmgroup.stepdefinitions.F1_HomeValueEstimatorTest_StepDef.userEntersInvalidInTheAddressField(F1_HomeValueEstimatorTest_StepDef.java:30)
+	at ✽.User enters invalid "Canada" in the address field(file:///Users/fahadkhan/Projects/RBCProject/src/test/resources/Features/F1_HomeValueEstimatorTest.feature:12)
+
+As a user I want to verify that the RBC Home Value Estimator handles valid and invalid address inputs correctly.User enters an invalid home address #2 -- Time elapsed: 22.39 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (af6046dd396ebaa423c6da089fea9045)] -> xpath: //*[@id='address']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/pp/xd6nhfmx531...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60209}, goog:processID: 32934, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60209/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af6046dd396ebaa423c6da089fea9045
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fdmgroup.pages.HomeValueEstimatorPage.enterAddress(HomeValueEstimatorPage.java:46)
+	at com.fdmgroup.stepdefinitions.F1_HomeValueEstimatorTest_StepDef.userEntersInvalidInTheAddressField(F1_HomeValueEstimatorTest_StepDef.java:30)
+	at ✽.User enters invalid "Pakistan" in the address field(file:///Users/fahadkhan/Projects/RBCProject/src/test/resources/Features/F1_HomeValueEstimatorTest.feature:12)
+

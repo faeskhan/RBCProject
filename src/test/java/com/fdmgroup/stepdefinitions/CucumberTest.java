@@ -18,6 +18,6 @@ import org.junit.runner.RunWith;
        // dryRun = true,
         publish = true
 )
-public class CucumberRunner {
+public class CucumberTest {
 
 }

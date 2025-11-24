@@ -6,7 +6,7 @@
 /Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/pomscripts/HomeValueEstimatorTest.java
 /Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/pomscripts/MortgageCalculatorTest.java
 /Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/pomscripts/Runner.java
-/Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/stepdefinitions/CucumberRunner.java
+/Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/stepdefinitions/CucumberTest.java
 /Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/stepdefinitions/F1_HomeValueEstimatorTest_StepDef.java
 /Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/stepdefinitions/F2_MortgageCalculatorTest_StepDef.java
 /Users/fahadkhan/Projects/RBCProject/src/test/java/com/fdmgroup/stepdefinitions/F3_ContactUsTest_StepDef.java

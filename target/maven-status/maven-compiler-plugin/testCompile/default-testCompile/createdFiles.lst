@@ -5,9 +5,9 @@ com/fdmgroup/pages/ContactUsPage.class
 com/fdmgroup/pomscripts/Runner.class
 com/fdmgroup/pomscripts/HomeValueEstimatorTest.class
 com/fdmgroup/stepdefinitions/F3_ContactUsTest_StepDef.class
+com/fdmgroup/stepdefinitions/CucumberTest.class
 com/fdmgroup/data/DataFile.class
 com/fdmgroup/stepdefinitions/F2_MortgageCalculatorTest_StepDef.class
-com/fdmgroup/stepdefinitions/CucumberRunner.class
 com/fdmgroup/utilities/DriverUtilities.class
 com/fdmgroup/pages/MortgageCalculatorPage.class
 com/fdmgroup/pages/HomeValueEstimatorPage.class
