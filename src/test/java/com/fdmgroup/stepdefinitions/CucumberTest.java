@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
                 "junit:Report/cucumber.junit",
                 "html:Report/cucumber.html"
         },
-       // dryRun = true,
+        dryRun = true,
         publish = true
 )
 public class CucumberTest {
