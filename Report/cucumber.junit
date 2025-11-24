@@ -1,3 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.017" tests="0" skipped="0" failures="0" errors="0" timestamp="2025-11-23T22:21:08.800205Z">
+<testsuite name="Cucumber" time="182.05" tests="7" skipped="0" failures="4" errors="0" timestamp="2025-11-24T16:28:37.407020Z">
+<testcase classname="As a user I want to verify that the RBC Home Value Estimator handles valid and invalid address inputs correctly" name="User enters a valid home address" time="47.639">
+<system-out><![CDATA[
+Given User launches the RBC Home Value Estimator page.......................passed
+When User enters valid address in the address field.........................passed
+And Selects the first suggested address.....................................passed
+And Clicks on the Get Started button........................................passed
+Then User should be redirected to the What is Your Property Type page.......passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to verify that the RBC Home Value Estimator handles valid and invalid address inputs correctly" name="User enters an invalid home address - #1.1" time="22.939">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (fff82b61f7fa0f3f6497b59d03cc98d8)] -&gt; xpath: //*[@id='address']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/pp/xd6nhfmx531...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59420}, goog:processID: 31320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fff82b61f7fa0f3f6497b59d03cc98d8">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (fff82b61f7fa0f3f6497b59d03cc98d8)] -> xpath: //*[@id='address']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/pp/xd6nhfmx531...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59420}, goog:processID: 31320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fff82b61f7fa0f3f6497b59d03cc98d8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fdmgroup.pages.HomeValueEstimatorPage.enterAddress(HomeValueEstimatorPage.java:46)
+	at com.fdmgroup.stepdefinitions.F1_HomeValueEstimatorTest_StepDef.userEntersInvalidInTheAddressField(F1_HomeValueEstimatorTest_StepDef.java:30)
+	at ✽.User enters invalid "Canada" in the address field(file:///Users/fahadkhan/Projects/RBCProject/src/test/resources/Features/F1_HomeValueEstimatorTest.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the RBC Home Value Estimator page.......................passed
+When User enters invalid "Canada" in the address field......................failed
+And Selects the first suggested address.....................................skipped
+And Clicks on the Get Started button........................................skipped
+Then The system should display an error message "Invalid address"...........skipped
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to verify that the RBC Home Value Estimator handles valid and invalid address inputs correctly" name="User enters an invalid home address - #1.2" time="22.948">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (fff82b61f7fa0f3f6497b59d03cc98d8)] -&gt; xpath: //*[@id='address']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/pp/xd6nhfmx531...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59420}, goog:processID: 31320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fff82b61f7fa0f3f6497b59d03cc98d8">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (fff82b61f7fa0f3f6497b59d03cc98d8)] -> xpath: //*[@id='address']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/pp/xd6nhfmx531...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59420}, goog:processID: 31320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fff82b61f7fa0f3f6497b59d03cc98d8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fdmgroup.pages.HomeValueEstimatorPage.enterAddress(HomeValueEstimatorPage.java:46)
+	at com.fdmgroup.stepdefinitions.F1_HomeValueEstimatorTest_StepDef.userEntersInvalidInTheAddressField(F1_HomeValueEstimatorTest_StepDef.java:30)
+	at ✽.User enters invalid "Pakistan" in the address field(file:///Users/fahadkhan/Projects/RBCProject/src/test/resources/Features/F1_HomeValueEstimatorTest.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the RBC Home Value Estimator page.......................passed
+When User enters invalid "Pakistan" in the address field....................failed
+And Selects the first suggested address.....................................skipped
+And Clicks on the Get Started button........................................skipped
+Then The system should display an error message "Invalid address"...........skipped
+]]></system-out>
+</testcase>
+<testcase classname="Verify functionality of RBC Mortgage Payment Calculator" name="User should be able to open the mortgage payment calculator" time="33.646">
+<system-out><![CDATA[
+Given User launches the RBC home page.......................................passed
+When User navigates to Mortgage Calculator page.............................passed
+Then The calculator page should be displayed................................passed
+And The heading should contain "Mortgage Payment Calculator"................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify functionality of RBC Mortgage Payment Calculator" name="User should be able to calculate a mortgage payment estimate" time="42.763">
+<failure type="java.lang.AssertionError" message="Expected the monthly payment result to be displayed">
+<![CDATA[java.lang.AssertionError: Expected the monthly payment result to be displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.fdmgroup.stepdefinitions.F2_MortgageCalculatorTest_StepDef.the_results_page_should_display_the_estimated_monthly_payment(F2_MortgageCalculatorTest_StepDef.java:53)
+	at ✽.The results page should display the estimated monthly payment(file:///Users/fahadkhan/Projects/RBCProject/src/test/resources/Features/F2_MortgageCalculatorTest.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+When User enters amount in the Mortgage Amount field........................passed
+And User clicks the Calculate button........................................passed
+Then The results page should display the estimated monthly payment..........failed
+And The result should include the text "Payment will be:"...................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to verify the help and support options on the RBC Contact Us website" name="User should be able to access the Contact Us page" time="2.007">
+<system-out><![CDATA[
+Given User navigates to the RBC home page...................................passed
+When User navigates to the Contact Us page in the footer....................passed
+Then The page should contain the text "Let us help you find the answers you're looking for...".passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to verify the help and support options on the RBC Contact Us website" name="User should be able to search for 'credit card' in the help section - #1.1" time="3.007">
+<failure type="java.lang.AssertionError" message="Expected search results to the question should be displayed">
+<![CDATA[java.lang.AssertionError: Expected search results to the question should be displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.fdmgroup.stepdefinitions.F3_ContactUsTest_StepDef.user_should_see_search_results_related_to(F3_ContactUsTest_StepDef.java:43)
+	at ✽.User should see search results related to 'credit card'(file:///Users/fahadkhan/Projects/RBCProject/src/test/resources/Features/F3_ContactUsTest.feature:11)
+]]>
+</failure>
+<system-out><![CDATA[
+When User enters 'credit card' in the search box............................passed
+And Clicks the search button................................................passed
+Then User should see search results related to 'credit card'................failed
+]]></system-out>
+</testcase>
 </testsuite>
